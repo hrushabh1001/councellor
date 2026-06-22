@@ -80,24 +80,7 @@
 
 			<!-- optional: enforce Maven version in CI/dev -->
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-enforcer-plugin</artifactId>
-				<version>3.2.0</version>
-				<executions>
-					<execution>
-						<id>enforce-maven</id>
-						<goals><goal>enforce</goal></goals>
-						<configuration>
-							<rules>
-								<requireMavenVersion>
-									<version>[3.9.0,)</version>
-									<message>Use Maven 3.9.0 or newer (3.9.16 recommended).</message>
-								</requireMavenVersion>
-							</rules>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+				 
 		</plugins>
 	</build>
 
